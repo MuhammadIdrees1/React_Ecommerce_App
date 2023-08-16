@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/MuhammadIdrees1/React_Ecommerce_App/static/css/main.5ee6fa61.css",
-    "main.js": "/MuhammadIdrees1/React_Ecommerce_App/static/js/main.583b962d.js",
+    "main.js": "/MuhammadIdrees1/React_Ecommerce_App/static/js/main.ed27706b.js",
     "static/js/787.c875205c.chunk.js": "/MuhammadIdrees1/React_Ecommerce_App/static/js/787.c875205c.chunk.js",
     "index.html": "/MuhammadIdrees1/React_Ecommerce_App/index.html",
     "main.5ee6fa61.css.map": "/MuhammadIdrees1/React_Ecommerce_App/static/css/main.5ee6fa61.css.map",
-    "main.583b962d.js.map": "/MuhammadIdrees1/React_Ecommerce_App/static/js/main.583b962d.js.map",
+    "main.ed27706b.js.map": "/MuhammadIdrees1/React_Ecommerce_App/static/js/main.ed27706b.js.map",
     "787.c875205c.chunk.js.map": "/MuhammadIdrees1/React_Ecommerce_App/static/js/787.c875205c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5ee6fa61.css",
-    "static/js/main.583b962d.js"
+    "static/js/main.ed27706b.js"
   ]
 }
