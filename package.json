@@ -1,4 +1,7 @@
+
 {
+  "homepage": "https://github.com/MuhammadIdrees1/React_Ecommerce_App",
+
   "name": "react-ecommerce",
   "version": "0.1.0",
   "private": true,
@@ -18,7 +21,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -39,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.0.0",
     "tailwindcss": "^3.3.3"
   }
 }
