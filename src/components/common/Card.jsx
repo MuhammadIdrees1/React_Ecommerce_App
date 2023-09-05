@@ -1,25 +1,41 @@
 import React from "react";
 
+import { useNavigate } from "react-router-dom";
+
 const Card = (props) => {
-  console.log(props);
+  let navigate = useNavigate();
+
   const { item } = props;
   return (
-    // w-[19.875rem] h-[26.2rem] bg-red-500 border-8 border-slate-800
-    //
-    //
-    <div className="  flex flex-col justify-between rounded-2xl">
-      <div className=" ">
+    <div className="max-w-[297.25px]  flex flex-col justify-between   mt-8 ">
+      <div className="border-8 border-white rounded-3xl  relative shadow-sm ">
         <img
-          src={item.image}
+          src={(item.image = require("../../assets/Rectangle 5.jpg"))}
           alt=""
-          srcset=""
-          className=" border-8 border-white rounded-2xl object-fill h-[20.875rem] w-[302px]"
+          className=" object-fill rounded-2xl  h-[17.875rem] w-[302px]"
         />
+        <div className="h-9  w-14 p-2 bg-blue-600 text-white absolute text-sm font-semibold	  border-none rounded-tl-xl rounded-ee-3xl top-0">
+          <p className="	text-center    self-center align-middle ">{"new"}</p>
+        </div>
       </div>{" "}
-      <h1 className=" text-2xl text-[#232321] font-semibold">{item.title}</h1>
-      <button className="font-medium  text-sm	h-12 w-full bg-[#232321]  rounded-md">
-        View Product - <span className="text-[#FFA52F]">$125 ($250)</span>
-      </button>
+      <div className="">
+        <h1 className="mt-4 text-2xl text-[#232321] font-semibold">
+          {item.title.slice(0, 35)}...
+        </h1>
+
+        <button
+          onClick={() => (
+            navigate(`/productdetail/${item.id}`),
+            window.scroll({
+              top: 0,
+              left: 0,
+            })
+          )}
+          className="font-medium  mt-4 text-white text-sm	h-12 w-full bg-[#232321]  rounded-md"
+        >
+          View Product - <span className="text-[#FFA52F]">${item.price}</span>
+        </button>
+      </div>
     </div>
   );
 };
