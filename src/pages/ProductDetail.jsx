@@ -4,10 +4,13 @@ import { getSingleProduct } from "../services/products";
 import Loader from "../components/common/Loader";
 import ProductSlider from "../components/ProductSlider";
 import { useData } from "../hooks/useData";
+import Button from "../components/common/Button";
 
 const ProductDetail = () => {
   const [singleProduct, setSingleProduct] = useState([]);
   const [selectedColor, setSelectedColor] = useState("");
+  const [cart, setCart] = useState([]);
+
   const { products } = useData();
   const { productId } = useParams();
 
@@ -43,6 +46,14 @@ const ProductDetail = () => {
     { id: 3, name: "Blue", code: "#33A8FF" },
     // Add more colors as needed
   ];
+
+  const handleClick = (product) => {
+    if (cart.includes(product)) return;
+    cart.push(product);
+    const cartItem = JSON.stringify(cart);
+    localStorage.setItem("cart", cartItem);
+  };
+
   return (
     <>
       <section className="min-h-screen px-14 pt-20">
@@ -168,6 +179,13 @@ const ProductDetail = () => {
                 <button className="h-12 w-[50.25px] bg-white rounded-lg mt-1	mr-1">
                   12
                 </button>{" "}
+              </div>
+              <div className="">
+                <Button
+                  text={"Add To Cart"}
+                  backgroundColor={"#232321"}
+                  onClick={() => handleClick(singleProduct)}
+                />
               </div>
             </div>
           </div>

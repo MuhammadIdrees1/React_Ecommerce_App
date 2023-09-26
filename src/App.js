@@ -17,7 +17,7 @@ function App() {
   return (
     <ContextApi>
       <>
-        <Header />
+        {/* <Header /> */}
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/productdetail/:productId" element={<ProductDetail />} />
@@ -27,7 +27,7 @@ function App() {
           <Route path="/checkout" element={<Checkout />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </>
     </ContextApi>
   );

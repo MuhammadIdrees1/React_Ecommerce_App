@@ -40,7 +40,7 @@ const ProductSlider = ({ products }) => {
           <Button
             onClick={handlePrevClick}
             text={<IoIosArrowDown />}
-            backgroundColor={"#"}
+            backgroundColor={"#232321"}
           />
           <Button onClick={handleNextClick} text={<IoIosArrowUp />} />
           <button>left</button>
