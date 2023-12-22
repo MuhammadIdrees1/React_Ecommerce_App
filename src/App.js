@@ -17,7 +17,7 @@ function App() {
   return (
     <ContextApi>
       <>
-        {/* <Header /> */}
+        <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/productdetail/:productId" element={<ProductDetail />} />

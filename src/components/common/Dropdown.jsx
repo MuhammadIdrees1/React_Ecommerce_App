@@ -14,12 +14,13 @@ const Dropdown = (props) => {
     // Refine By
     if (title === "Refine by") {
       return (
-        <div className="flex flex-wrap">
+        <div className="flex gap-3 flex-wrap">
           {option.length !== 0 && (
             <button
-              className=" mt-3 font-semibold rounded-xl text-center py-3 text-white bg-[#4A69E2] text-xs h-[38px] px-4"
+              className=" font-semibold rounded-xl text-center py-3 text-white bg-[#4A69E2] text-xs h-[38px] px-4"
               onClick={() => {
                 setSelectedCategory([]);
+
                 option.length = 0;
               }}
             >
@@ -30,7 +31,7 @@ const Dropdown = (props) => {
           {option.map((item, index) => {
             return (
               <div key={index} className="">
-                <p className="font-semibold text-xs h-[38px] text-center py-3 text-white w-fit  rounded-xl ml-3	mt-3 px-4 bg-[#4A69E2]">
+                <p className="font-semibold text-xs h-[38px] text-center py-3 text-white w-fit  rounded-xl px-4 bg-[#4A69E2]">
                   {item}
                 </p>
               </div>

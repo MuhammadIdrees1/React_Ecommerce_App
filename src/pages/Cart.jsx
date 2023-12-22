@@ -2,7 +2,7 @@ import React from "react";
 
 const Cart = () => {
   const cartItems = localStorage.getItem("cart");
-  console.log("cartItems");
+  console.log("cartItems", cartItems);
 
   return (
     <section className="min-h-screen px-3 md:px-14  text-[#232321]	 bg-[#E7E7E3]">

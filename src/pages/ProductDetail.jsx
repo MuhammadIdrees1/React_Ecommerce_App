@@ -58,25 +58,25 @@ const ProductDetail = () => {
     <>
       <section className="min-h-screen px-14 pt-20">
         <div className=" flex">
-          <div className="grid grid-cols-2 w-[874px]  gap-4 mr-4  	">
+          <div className="grid grid-cols-2 grid-rows-2 w-[874px]  gap-4 mr-4  	">
             <img
               src={singleProduct?.image}
-              className="rounded-tl-[48px]"
+              className="rounded-tl-[48px] w-full"
               alt=""
             />
             <img
               src={singleProduct?.image}
-              className="rounded-tr-[48px]"
+              className="rounded-tr-[48px] w-full"
               alt=""
             />
             <img
               src={singleProduct?.image}
-              className="rounded-bl-[48px]"
+              className="rounded-bl-[48px] w-full"
               alt=""
             />
             <img
               src={singleProduct?.image}
-              className="rounded-br-[48px]"
+              className="rounded-br-[48px] w-full"
               alt=""
             />
           </div>

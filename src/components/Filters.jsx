@@ -71,7 +71,7 @@ export const Filters = () => {
   }, [selectedRange, selectedCategory]);
 
   return (
-    <div className=" w-80 pr-4">
+    <div className="w-80 xl:w-96 pr-4 hidden lg:block">
       <h2 className="text-2xl font-semibold pt-7">Filters</h2>
       <Dropdown
         title={"Refine by"}
